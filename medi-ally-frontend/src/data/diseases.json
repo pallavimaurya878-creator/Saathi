@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1, "name": "Diabetes (Type 2)", "description": "A chronic condition affecting blood sugar processing.",
+    "symptoms": ["Frequent urination", "Increased thirst", "Fatigue", "Blurred vision"],
+    "restrictedFoods": ["White rice", "White bread", "Sugary drinks", "Candy", "Pastries", "Honey"],
+    "recommendedFoods": ["Leafy greens", "Whole grains", "Lentils", "Fish", "Nuts", "Berries", "Greek yogurt"],
+    "exercises": ["Walking", "Swimming", "Cycling", "Yoga", "Resistance training"],
+    "riskLevel": "high", "color": "#F59E0B"
+  },
+  {
+    "id": 2, "name": "Hypertension", "description": "Persistently elevated blood pressure.",
+    "symptoms": ["Headaches", "Shortness of breath", "Nosebleeds", "Dizziness"],
+    "restrictedFoods": ["Salt-rich foods", "Processed meats", "Canned soups", "Fast food", "Alcohol"],
+    "recommendedFoods": ["Bananas", "Spinach", "Oats", "Salmon", "Beets", "Garlic", "Avocado"],
+    "exercises": ["Brisk walking", "Jogging", "Cycling", "Swimming", "Tai Chi"],
+    "riskLevel": "high", "color": "#EF4444"
+  },
+  {
+    "id": 3, "name": "Obesity", "description": "Excess body fat accumulation posing health risks.",
+    "symptoms": ["BMI over 30", "Joint pain", "Fatigue", "Sleep apnea"],
+    "restrictedFoods": ["Fried foods", "Sugary beverages", "Fast food", "Chips", "Ice cream"],
+    "recommendedFoods": ["Vegetables", "Lean protein", "Whole grains", "Fruits", "Green tea"],
+    "exercises": ["Walking", "Swimming", "Low-impact aerobics", "Cycling", "Strength training"],
+    "riskLevel": "medium", "color": "#F97316"
+  },
+  {
+    "id": 4, "name": "Anemia", "description": "Deficiency in red blood cells or hemoglobin.",
+    "symptoms": ["Fatigue", "Pale skin", "Weakness", "Dizziness", "Cold hands"],
+    "restrictedFoods": ["Tea with meals", "Coffee with meals", "Processed foods"],
+    "recommendedFoods": ["Spinach", "Red meat", "Lentils", "Chickpeas", "Pumpkin seeds", "Broccoli"],
+    "exercises": ["Gentle walking", "Yoga", "Light stretching", "Tai Chi"],
+    "riskLevel": "medium", "color": "#A855F7"
+  },
+  {
+    "id": 5, "name": "Asthma", "description": "Chronic respiratory condition with airway inflammation.",
+    "symptoms": ["Wheezing", "Coughing", "Chest tightness", "Shortness of breath"],
+    "restrictedFoods": ["Sulfite foods", "Wine", "Dried fruits (sulfited)", "Pickled foods"],
+    "recommendedFoods": ["Ginger", "Turmeric", "Apples", "Leafy greens", "Salmon"],
+    "exercises": ["Swimming", "Walking", "Yoga", "Breathing exercises"],
+    "riskLevel": "medium", "color": "#06B6D4"
+  },
+  {
+    "id": 6, "name": "Heart Disease", "description": "Conditions affecting the heart including coronary artery disease.",
+    "symptoms": ["Chest pain", "Shortness of breath", "Fatigue", "Irregular heartbeat"],
+    "restrictedFoods": ["Trans fats", "Fried foods", "Red meat excess", "Sodium-rich foods"],
+    "recommendedFoods": ["Salmon", "Walnuts", "Olive oil", "Berries", "Oats", "Flaxseed"],
+    "exercises": ["Walking", "Cycling", "Swimming", "Light jogging", "Yoga"],
+    "riskLevel": "critical", "color": "#DC2626"
+  },
+  {
+    "id": 7, "name": "Thyroid Disorder", "description": "Imbalance in thyroid hormone production.",
+    "symptoms": ["Weight changes", "Fatigue", "Hair loss", "Mood swings"],
+    "restrictedFoods": ["Soy excess", "Raw cruciferous veggies excess", "Processed foods"],
+    "recommendedFoods": ["Seaweed", "Brazil nuts", "Eggs", "Fish", "Chicken", "Berries"],
+    "exercises": ["Walking", "Yoga", "Strength training", "Pilates"],
+    "riskLevel": "medium", "color": "#8B5CF6"
+  },
+  {
+    "id": 8, "name": "PCOS", "description": "Polycystic ovary syndrome — hormonal disorder.",
+    "symptoms": ["Irregular periods", "Weight gain", "Acne", "Hair thinning"],
+    "restrictedFoods": ["Refined carbs", "Sugary foods", "White bread", "Dairy excess"],
+    "recommendedFoods": ["Leafy greens", "Berries", "Fatty fish", "Nuts", "Whole grains", "Turmeric"],
+    "exercises": ["HIIT", "Strength training", "Yoga", "Swimming", "Walking"],
+    "riskLevel": "medium", "color": "#EC4899"
+  },
+  {
+    "id": 9, "name": "Kidney Disease", "description": "Progressive loss of kidney function.",
+    "symptoms": ["Fatigue", "Swollen ankles", "Reduced urination", "Nausea"],
+    "restrictedFoods": ["High-sodium foods", "High-potassium foods", "Processed meats"],
+    "recommendedFoods": ["Cauliflower", "Blueberries", "Egg whites", "Garlic", "Olive oil"],
+    "exercises": ["Walking", "Light stretching", "Chair exercises", "Gentle yoga"],
+    "riskLevel": "high", "color": "#14B8A6"
+  },
+  {
+    "id": 10, "name": "Arthritis", "description": "Inflammation of joints causing pain and stiffness.",
+    "symptoms": ["Joint pain", "Stiffness", "Swelling", "Reduced range of motion"],
+    "restrictedFoods": ["Fried foods", "Processed sugars", "Red meat excess", "Alcohol"],
+    "recommendedFoods": ["Fatty fish", "Olive oil", "Cherries", "Broccoli", "Walnuts", "Turmeric"],
+    "exercises": ["Swimming", "Water aerobics", "Gentle yoga", "Tai Chi"],
+    "riskLevel": "medium", "color": "#F59E0B"
+  },
+  {
+    "id": 11, "name": "Depression & Anxiety", "description": "Mental health conditions affecting mood and daily functioning.",
+    "symptoms": ["Persistent sadness", "Loss of interest", "Sleep changes", "Difficulty concentrating"],
+    "restrictedFoods": ["Alcohol", "Caffeine excess", "Refined sugars", "Processed foods"],
+    "recommendedFoods": ["Dark chocolate", "Salmon", "Fermented foods", "Bananas", "Nuts", "Berries"],
+    "exercises": ["Running", "Yoga", "Dancing", "Walking in nature", "Meditation"],
+    "riskLevel": "medium", "color": "#6366F1"
+  },
+  {
+    "id": 12, "name": "Gastric / GERD", "description": "Gastroesophageal reflux disease causing acid reflux.",
+    "symptoms": ["Heartburn", "Acid reflux", "Chest pain", "Difficulty swallowing"],
+    "restrictedFoods": ["Spicy foods", "Citrus", "Coffee", "Chocolate", "Fried foods", "Alcohol"],
+    "recommendedFoods": ["Oatmeal", "Ginger", "Banana", "Melon", "Green vegetables", "Rice"],
+    "exercises": ["Walking after meals", "Gentle yoga", "Swimming", "Deep breathing"],
+    "riskLevel": "low", "color": "#22C55E"
+  }
+]

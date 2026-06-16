@@ -1,6 +1,14 @@
-# Saathi
-## Execution plan 
+# Saathi Frontend
 
+Saathi is an AI-powered healthcare companion designed to provide users with personalized health assistance through modules such as smart diet planning, diagnostics, exercise guidance, emergency response, and conversational AI support.
+
+## Frontend Architecture
+
+The frontend is built using **React (Vite)** with a modular, scalable, and maintainable architecture. Components are organized by feature to support rapid development and future expansion.
+
+## Project Structure
+
+```text
 medi-ally-frontend/
 │
 ├── public/
@@ -11,7 +19,7 @@ medi-ally-frontend/
 │       └── icons/
 │
 ├── src/
-│   │
+│
 │   ├── assets/
 │   │   ├── images/
 │   │   │   ├── logo.png
@@ -19,76 +27,25 @@ medi-ally-frontend/
 │   │   │   └── doctor-illustration.svg
 │   │   ├── icons/
 │   │   └── animations/
-│   │       └── loading.json (Lottie)
+│   │       └── loading.json
 │   │
 │   ├── components/
-│   │   │
-│   │   ├── common/                    # Reusable UI components
-│   │   │   ├── Button.jsx
-│   │   │   ├── Input.jsx
-│   │   │   ├── Card.jsx
-│   │   │   ├── Modal.jsx
-│   │   │   ├── Loader.jsx
-│   │   │   ├── Toast.jsx
-│   │   │   └── ProtectedRoute.jsx
-│   │   │
-│   │   ├── layout/
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── Sidebar.jsx
-│   │   │   ├── Footer.jsx
-│   │   │   └── DashboardLayout.jsx
-│   │   │
-│   │   ├── dashboard/
-│   │   │   ├── HealthOverview.jsx
-│   │   │   ├── VitalsCard.jsx
-│   │   │   ├── QuickActions.jsx
-│   │   │   └── RecentActivity.jsx
-│   │   │
-│   │   ├── dietician/                 # Smart Dietician Module
-│   │   │   ├── MealPlanCard.jsx
-│   │   │   ├── FoodList.jsx
-│   │   │   ├── AllergyInput.jsx
-│   │   │   ├── RestrictedFoods.jsx
-│   │   │   ├── RecommendedFoods.jsx
-│   │   │   └── NutritionChart.jsx
-│   │   │
-│   │   ├── diagnostics/               # Medical Report Module
-│   │   │   ├── ReportUploader.jsx
-│   │   │   ├── ReportScanner.jsx
-│   │   │   ├── ReportAnalysis.jsx
-│   │   │   ├── DiagnosisResult.jsx
-│   │   │   └── PrescriptionViewer.jsx
-│   │   │
-│   │   ├── exercise/                  # Exercise Guide Module
-│   │   │   ├── ExerciseCard.jsx
-│   │   │   ├── WorkoutPlan.jsx
-│   │   │   ├── ExerciseTimer.jsx
-│   │   │   ├── VideoTutorial.jsx
-│   │   │   └── ProgressTracker.jsx
-│   │   │
-│   │   ├── emergency/                 # Emergency Response Module
-│   │   │   ├── SOSButton.jsx
-│   │   │   ├── EmergencyContacts.jsx
-│   │   │   ├── HospitalLocator.jsx
-│   │   │   ├── AmbulanceCall.jsx
-│   │   │   └── AlertModal.jsx
-│   │   │
-│   │   ├── chatbot/                   # AI Health Chatbot
-│   │   │   ├── ChatWindow.jsx
-│   │   │   ├── ChatMessage.jsx
-│   │   │   ├── ChatInput.jsx
-│   │   │   └── VoiceInput.jsx
-│   │   │
-│   │   └── profile/
-│   │       ├── UserProfile.jsx
-│   │       ├── MedicalHistory.jsx
-│   │       └── Settings.jsx
 │   │
-│   ├── pages/
-│   │   ├── Landing.jsx                # Home/Landing page
+│   │   ├── common/                    # Reusable UI components
+│   │   ├── layout/                    # Navigation and layouts
+│   │   ├── dashboard/                 # Dashboard widgets
+│   │   ├── dietician/                 # Smart Dietician Module
+│   │   ├── diagnostics/               # Medical Report Analysis
+│   │   ├── exercise/                  # Exercise Guidance Module
+│   │   ├── emergency/                 # Emergency Response Features
+│   │   ├── chatbot/                   # AI Health Chatbot
+│   │   └── profile/                   # User Profile Management
+│   │
+│   ├── pages/                         # Application pages
+│   │   ├── Landing.jsx
 │   │   ├── Login.jsx
 │   │   ├── Register.jsx
-│   │   ├── Dashboard.jsx              # Main dashboard
+│   │   ├── Dashboard.jsx
 │   │   ├── DieticianPage.jsx
 │   │   ├── DiagnosticsPage.jsx
 │   │   ├── ExercisePage.jsx
@@ -98,12 +55,12 @@ medi-ally-frontend/
 │   │   ├── AboutPage.jsx
 │   │   └── NotFound.jsx
 │   │
-│   ├── context/
+│   ├── context/                       # Global Context Providers
 │   │   ├── AuthContext.jsx
 │   │   ├── ThemeContext.jsx
 │   │   └── HealthDataContext.jsx
 │   │
-│   ├── hooks/
+│   ├── hooks/                         # Custom React Hooks
 │   │   ├── useAuth.js
 │   │   ├── useFetch.js
 │   │   ├── useVoiceInput.js
@@ -111,8 +68,8 @@ medi-ally-frontend/
 │   │   ├── useEmergencyAlert.js
 │   │   └── useLocalStorage.js
 │   │
-│   ├── services/                      # API calls
-│   │   ├── api.js                     # Axios instance
+│   ├── services/                      # API communication layer
+│   │   ├── api.js
 │   │   ├── authService.js
 │   │   ├── dieticianService.js
 │   │   ├── diagnosticsService.js
@@ -120,19 +77,19 @@ medi-ally-frontend/
 │   │   ├── emergencyService.js
 │   │   └── chatbotService.js
 │   │
-│   ├── store/                         # Zustand stores
+│   ├── store/                         # Zustand state management
 │   │   ├── userStore.js
 │   │   ├── healthStore.js
 │   │   └── emergencyStore.js
 │   │
-│   ├── utils/
+│   ├── utils/                         # Utility functions
 │   │   ├── constants.js
 │   │   ├── helpers.js
 │   │   ├── validators.js
 │   │   ├── formatters.js
-│   │   └── medicalCalculations.js     # BMI, BMR etc.
+│   │   └── medicalCalculations.js
 │   │
-│   ├── data/                          # Mock data for hackathon demo
+│   ├── data/                          # Mock data for demos
 │   │   ├── diseases.json
 │   │   ├── foods.json
 │   │   ├── exercises.json
@@ -150,11 +107,121 @@ medi-ally-frontend/
 │   ├── main.jsx
 │   └── vite-env.d.ts
 │
-├── .env                               # API keys (never commit!)
+├── .env
 ├── .env.example
 ├── .gitignore
 ├── index.html
 ├── package.json
 ├── tailwind.config.js
 ├── postcss.config.js
-├── vite.config.js
+└── vite.config.js
+```
+
+## Core Modules
+
+### Dashboard
+
+* Health overview and vital statistics
+* Quick actions for common tasks
+* Recent activity tracking
+
+### Smart Dietician
+
+* Personalized meal recommendations
+* Allergy and dietary restriction management
+* Recommended and restricted food lists
+* Nutrition insights and charts
+
+### Diagnostics
+
+* Medical report upload and scanning
+* Automated report analysis
+* Diagnosis summaries
+* Prescription viewing
+
+### Exercise Guide
+
+* Customized workout plans
+* Exercise demonstrations
+* Video tutorials
+* Progress tracking and timers
+
+### Emergency Assistance
+
+* One-tap SOS functionality
+* Emergency contact management
+* Nearby hospital support
+* Ambulance assistance and alerts
+
+### AI Health Chatbot
+
+* Conversational health assistance
+* Voice-enabled interaction
+* Context-aware messaging
+
+### User Profile
+
+* Personal information management
+* Medical history records
+* Application settings and preferences
+
+## Technology Stack
+
+* React
+* Vite
+* Tailwind CSS
+* Zustand
+* Axios
+* React Router
+* Context API
+* Lottie Animations
+
+## Getting Started
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start Development Server
+
+```bash
+npm run dev
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Environment Variables
+
+Create a `.env` file in the project root and configure the required environment variables.
+
+```env
+VITE_API_BASE_URL=
+VITE_OPENAI_API_KEY=
+VITE_GOOGLE_MAPS_API_KEY=
+```
+
+> **Note:** Never commit your `.env` file to version control. Use `.env.example` to document required variables.
+
+## Development Goals
+
+* Modular and scalable architecture
+* Feature-based component organization
+* Reusable UI components
+* Clean separation of concerns
+* Rapid prototyping for hackathons
+* Production-ready extensibility
+
+```
+```
